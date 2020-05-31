@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to alanya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <section class="showcase">
+        <div class="video-container">
+            <video src="img/bgvideo.mp4" autoplay loop muted></video>
+        </div>
+        <div class="content">
+            <h1>Welcome to alanya</h1>
+            <h3>Have a great holiday</h3>
+            <a href="#about" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section id="about"class="about">
+            <h2 style="margin: 5px;" data-aos="fade-right" data-aos-duration="2000" >About</h2>
+            <p style="margin: 2px;" data-aos="fade-left" data-aos-duration="2000" id="year"></p>
+            <div style="margin: 5px;" data-aos="fade-up" data-aos-duration="2000" class="icons">
+                <a href="https://github.com/ilkkantuluce" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            </div>
+        </section>
+<script>
+    document.getElementById("year").innerHTML = "Ilkkan" + " Tuluce " + " <i class='far fa-copyright'></i> " + (new Date().getFullYear());
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
